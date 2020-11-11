@@ -3,22 +3,10 @@ context= canvas.getContext('2d');
 
 context.beginPath();
 
-context.moveTo(30,300);
-context.lineTo(30,100);
-
-context.moveTo(30,300);
-context.lineTo(200,300);
-
-context.moveTo(200,300);
-context.lineTo(200,100);
-
-context.moveTo(30,100);
-context.lineTo(200,100);
-
-context.moveTo(30,300);
-context.lineTo(200,100);
-
-context.moveTo(500,100);
-context.lineTo(400,100);
+context.rect(50,100,100,50);
+context.fillStyle="Blue";
+context.fill();
+context.lineWidth = 5;
+context.strokeStyle= "black";
 
 context.stroke();
