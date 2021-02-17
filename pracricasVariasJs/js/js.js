@@ -14,6 +14,13 @@ $(document).ready(function() {
       $(this).removeClass("campoError");
     }
 
-  })
+  });
+
+  $( "#target" ).select(function() {
+    alert( "Handler for .select() called." );
+  });
+
+  function myFunction() {
+  document.getElementById("demo").innerHTML = "You copied text!"};
 
 })
