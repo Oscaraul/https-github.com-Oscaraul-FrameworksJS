@@ -20,7 +20,7 @@ $(document).ready(function() {
     alert( "Handler for .select() called." );
   });
 
-  function myFunction() {
-  document.getElementById("demo").innerHTML = "You copied text!"};
+});
 
-})
+function myFunction() {
+document.getElementById("demo").innerHTML = "You copied text!"};
