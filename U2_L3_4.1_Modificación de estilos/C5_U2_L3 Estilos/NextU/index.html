@@ -12,15 +12,15 @@
 
     $(".logo").click(function(){
       var tipoFont = $("body").css(["font-family","font-size","box-sizing"]);
-      $.each(tipoFont, function(tipo,value){
-        window.alert(tipo + ":" + value);
-      });
+      console.log(tipoFont)
+
+      $.each(tipoFont, function (tipo,value) {
+        window.alert(tipo+":"+value);
+      })
     });
 
-    $(":header, p, span").hover(function(){
+    $(":header,p, span").hover(function(){
       $(this).css("color","yellow");
-
-    });
 
     $(".cuadro").click(function(){
       $(this).css("height", function(index, value){
@@ -35,7 +35,7 @@
 
 
   });
-
+})
   </script>
 
 

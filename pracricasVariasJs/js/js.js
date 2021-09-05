@@ -1,7 +1,8 @@
 $(document).ready(function() {
 
   $("input").focus(function() {
-    $(this).siblings(".info").css("display","block")
+    $(this).siblings(".info").css("display","block");
+    $(this).siblings(".error").css("display","none");
 
   });
 
@@ -14,6 +15,18 @@ $(document).ready(function() {
       $(this).removeClass("campoError");
     }
 
+  });
+
+  $("input[type='email']").blur(function(){
+    var emailIngresado = $(this).val();
+    if(!emailIngresado.includes("@")||!emailIngresado.includes(".")){
+      $(this).siblings(".info").css("display","none");
+      $(this).siblings(".errMail").css("display","block");
+      $(this).addClass("campoError");
+    }else {
+      $(this).siblings(".errMail").css("display","none");
+      $(this).removeClass("campoError");
+    }
   });
 
   $( "#target" ).select(function() {

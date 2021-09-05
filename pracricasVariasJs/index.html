@@ -27,11 +27,14 @@
               </div>
               <div class="col-sm-4">
                 <span class="info">Estas haciendo click en Fecha</span>
+                <span class="error">Este campo no puede ser vacío</span>
                 <label for="fecha">Fecha:</label>
                 <input type="date" id="fecha">
               </div>
               <div class="col-sm-4">
                 <span class="info">Estas haciendo click en Correo</span>
+                <span class="error">Este campo no puede ser vacío</span>
+                <span class="errMail">Debes ingresar un email válido</span>
                 <label for="correo">Escribe tu correo electrónico</label>
                 <input type="email" placeholder="Email" id="email">
               </div>
@@ -41,8 +44,8 @@
 
           </form>
         </div>
-        <div class="row Caja_3">
-          <input type="submit" id="enviar" value="Enviar">
+        <div class="Caja_3">
+          <input type="submit" onclick="alert('Soy ORL')" id="enviar" value="Enviar">
         </div>
         <div class='Caja'>
           <form>
